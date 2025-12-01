@@ -44,7 +44,7 @@ __attribute__((objc_subclassing_restricted))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly) Foo *a __attribute__((swift_name("a")));
-@property (class, readonly) Foo *b __attribute__((swift_name("b")));
+@property (class, readonly) Foo *objcB __attribute__((swift_name("objcB")));
 @property (class, readonly) Foo *c __attribute__((swift_name("c")));
 + (KotlinArray<Foo *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<Foo *> *entries __attribute__((swift_name("entries")));
